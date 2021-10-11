@@ -15,5 +15,5 @@ php 独立部署，可选加密、开源
 
 #### 安装教程
 加wx群领取授权码及安装教程:
-![输入图片说明](https://images.gitee.com/uploads/images/2021/1012/004437_c2c582b7_8114674.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1012/005113_7aa15307_8114674.png "屏幕截图.png")
 
