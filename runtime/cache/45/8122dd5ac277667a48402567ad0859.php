@@ -1,0 +1,4 @@
+<?php
+//000000003600
+ exit();?>
+think_serialize:a:11:{i:39;a:3:{s:2:"id";i:39;s:7:"name_cn";s:12:"石家庄市";s:7:"name_en";s:12:"Shijiazhuang";}i:40;a:3:{s:2:"id";i:40;s:7:"name_cn";s:9:"唐山市";s:7:"name_en";s:8:"Tangshan";}i:41;a:3:{s:2:"id";i:41;s:7:"name_cn";s:12:"秦皇岛市";s:7:"name_en";s:11:"Qinhuangdao";}i:42;a:3:{s:2:"id";i:42;s:7:"name_cn";s:9:"邯郸市";s:7:"name_en";s:6:"Handan";}i:43;a:3:{s:2:"id";i:43;s:7:"name_cn";s:9:"邢台市";s:7:"name_en";s:7:"Xingtai";}i:44;a:3:{s:2:"id";i:44;s:7:"name_cn";s:9:"保定市";s:7:"name_en";s:7:"Baoding";}i:45;a:3:{s:2:"id";i:45;s:7:"name_cn";s:12:"张家口市";s:7:"name_en";s:11:"Zhangjiakou";}i:46;a:3:{s:2:"id";i:46;s:7:"name_cn";s:9:"承德市";s:7:"name_en";s:7:"Chengde";}i:47;a:3:{s:2:"id";i:47;s:7:"name_cn";s:9:"沧州市";s:7:"name_en";s:8:"Cangzhou";}i:48;a:3:{s:2:"id";i:48;s:7:"name_cn";s:9:"廊坊市";s:7:"name_en";s:8:"Langfang";}i:49;a:3:{s:2:"id";i:49;s:7:"name_cn";s:9:"衡水市";s:7:"name_en";s:8:"Hengshui";}}

@@ -1,0 +1,4 @@
+<?php
+//000000003600
+ exit();?>
+think_serialize:a:9:{i:314;a:3:{s:2:"id";i:314;s:7:"name_cn";s:9:"贵阳市";s:7:"name_en";s:7:"Guiyang";}i:315;a:3:{s:2:"id";i:315;s:7:"name_cn";s:12:"六盘水市";s:7:"name_en";s:10:"Liupanshui";}i:316;a:3:{s:2:"id";i:316;s:7:"name_cn";s:9:"遵义市";s:7:"name_en";s:5:"Zunyi";}i:317;a:3:{s:2:"id";i:317;s:7:"name_cn";s:9:"安顺市";s:7:"name_en";s:6:"Anshun";}i:318;a:3:{s:2:"id";i:318;s:7:"name_cn";s:9:"铜仁市";s:7:"name_en";s:7:"Tongren";}i:319;a:3:{s:2:"id";i:319;s:7:"name_cn";s:12:"黔西南州";s:7:"name_en";s:9:"Qianxinan";}i:320;a:3:{s:2:"id";i:320;s:7:"name_cn";s:9:"毕节市";s:7:"name_en";s:5:"Bijie";}i:321;a:3:{s:2:"id";i:321;s:7:"name_cn";s:12:"黔东南州";s:7:"name_en";s:11:"Qiandongnan";}i:322;a:3:{s:2:"id";i:322;s:7:"name_cn";s:9:"黔南州";s:7:"name_en";s:7:"Qiannan";}}

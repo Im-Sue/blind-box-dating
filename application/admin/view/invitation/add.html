@@ -1,0 +1,44 @@
+{extend name="tpl/base-add" /}
+{block name="content"}
+    <table class="table table-bordered table-hover table-data" id="tableData">
+        <tbody>
+            <tr>
+                <th>用户名</th>
+                <td><input class="form-control w-lg" type="text" name="data[user]" value="{$data.user}" /><span class="help-block">用户名必须唯一</span></td>
+            </tr>
+            <tr>
+                <th>密码</th>
+                <td><input class="form-control w-lg" type="text" name="data[pwd]" value="{$data.pwd}" /></td>
+            </tr>
+
+            <tr>
+                <th>总佣金</th>
+                <td><input class="form-control w-lg" type="text" name="data[total_money]" value="0" /></td>
+            </tr>
+
+            <tr>
+                <th>待提现</th>
+                <td><input class="form-control w-lg" type="text" name="data[surplus_money]" value="0" /></td>
+            </tr>
+
+            <tr>
+                <th>已提现</th>
+                <td><input class="form-control w-lg" type="text" name="data[already_money]" value="0" /></td>
+            </tr>
+            <tr>
+                <th>状态</th>
+                <td>
+                    <label><input type="radio" name="data[status]" value="1" checked /> 开通</label>
+                    <label><input type="radio" name="data[status]" value="0" {eq name="data.status" value="0"}checked{/eq} /> 未开通</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{/block}
+{block name="script"}
+    <script type="text/javascript">
+        $(function(){
+            initImageWebUploader("#wuPickImage");
+        });
+    </script>
+{/block}

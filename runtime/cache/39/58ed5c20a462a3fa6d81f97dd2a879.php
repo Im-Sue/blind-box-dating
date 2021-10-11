@@ -1,0 +1,4 @@
+<?php
+//000000003600
+ exit();?>
+think_serialize:a:11:{i:123;a:3:{s:2:"id";i:123;s:7:"name_cn";s:9:"杭州市";s:7:"name_en";s:8:"Hangzhou";}i:124;a:3:{s:2:"id";i:124;s:7:"name_cn";s:9:"宁波市";s:7:"name_en";s:6:"Ningbo";}i:125;a:3:{s:2:"id";i:125;s:7:"name_cn";s:9:"温州市";s:7:"name_en";s:7:"Wenzhou";}i:126;a:3:{s:2:"id";i:126;s:7:"name_cn";s:9:"嘉兴市";s:7:"name_en";s:7:"Jiaxing";}i:127;a:3:{s:2:"id";i:127;s:7:"name_cn";s:9:"湖州市";s:7:"name_en";s:6:"Huzhou";}i:128;a:3:{s:2:"id";i:128;s:7:"name_cn";s:9:"绍兴市";s:7:"name_en";s:8:"Shaoxing";}i:129;a:3:{s:2:"id";i:129;s:7:"name_cn";s:9:"金华市";s:7:"name_en";s:6:"Jinhua";}i:130;a:3:{s:2:"id";i:130;s:7:"name_cn";s:9:"衢州市";s:7:"name_en";s:6:"Quzhou";}i:131;a:3:{s:2:"id";i:131;s:7:"name_cn";s:9:"舟山市";s:7:"name_en";s:8:"Zhoushan";}i:132;a:3:{s:2:"id";i:132;s:7:"name_cn";s:9:"台州市";s:7:"name_en";s:7:"Taizhou";}i:133;a:3:{s:2:"id";i:133;s:7:"name_cn";s:9:"丽水市";s:7:"name_en";s:6:"Lishui";}}

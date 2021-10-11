@@ -1,0 +1,4 @@
+<?php
+//000000003600
+ exit();?>
+think_serialize:a:10:{i:346;a:3:{s:2:"id";i:346;s:7:"name_cn";s:9:"西安市";s:7:"name_en";s:5:"Xi'an";}i:347;a:3:{s:2:"id";i:347;s:7:"name_cn";s:9:"铜川市";s:7:"name_en";s:9:"Tongchuan";}i:348;a:3:{s:2:"id";i:348;s:7:"name_cn";s:9:"宝鸡市";s:7:"name_en";s:5:"Baoji";}i:349;a:3:{s:2:"id";i:349;s:7:"name_cn";s:9:"咸阳市";s:7:"name_en";s:8:"Xianyang";}i:350;a:3:{s:2:"id";i:350;s:7:"name_cn";s:9:"渭南市";s:7:"name_en";s:6:"Weinan";}i:351;a:3:{s:2:"id";i:351;s:7:"name_cn";s:9:"延安市";s:7:"name_en";s:6:"Yan'an";}i:352;a:3:{s:2:"id";i:352;s:7:"name_cn";s:9:"汉中市";s:7:"name_en";s:8:"Hanzhong";}i:353;a:3:{s:2:"id";i:353;s:7:"name_cn";s:9:"榆林市";s:7:"name_en";s:5:"Yulin";}i:354;a:3:{s:2:"id";i:354;s:7:"name_cn";s:9:"安康市";s:7:"name_en";s:6:"Ankang";}i:355;a:3:{s:2:"id";i:355;s:7:"name_cn";s:9:"商洛市";s:7:"name_en";s:8:"Shangluo";}}

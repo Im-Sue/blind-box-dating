@@ -1,0 +1,4 @@
+<?php
+//000000003600
+ exit();?>
+think_serialize:a:11:{i:50;a:3:{s:2:"id";i:50;s:7:"name_cn";s:9:"太原市";s:7:"name_en";s:7:"Taiyuan";}i:51;a:3:{s:2:"id";i:51;s:7:"name_cn";s:9:"大同市";s:7:"name_en";s:6:"Datong";}i:52;a:3:{s:2:"id";i:52;s:7:"name_cn";s:9:"阳泉市";s:7:"name_en";s:8:"Yangquan";}i:53;a:3:{s:2:"id";i:53;s:7:"name_cn";s:9:"长治市";s:7:"name_en";s:8:"Changzhi";}i:54;a:3:{s:2:"id";i:54;s:7:"name_cn";s:9:"晋城市";s:7:"name_en";s:8:"Jincheng";}i:55;a:3:{s:2:"id";i:55;s:7:"name_cn";s:9:"朔州市";s:7:"name_en";s:8:"Shuozhou";}i:56;a:3:{s:2:"id";i:56;s:7:"name_cn";s:9:"晋中市";s:7:"name_en";s:8:"Jinzhong";}i:57;a:3:{s:2:"id";i:57;s:7:"name_cn";s:9:"运城市";s:7:"name_en";s:8:"Yuncheng";}i:58;a:3:{s:2:"id";i:58;s:7:"name_cn";s:9:"忻州市";s:7:"name_en";s:7:"Xinzhou";}i:59;a:3:{s:2:"id";i:59;s:7:"name_cn";s:9:"临汾市";s:7:"name_en";s:6:"Linfen";}i:60;a:3:{s:2:"id";i:60;s:7:"name_cn";s:9:"吕梁市";s:7:"name_en";s:7:"Lvliang";}}

@@ -1,0 +1,4 @@
+<?php
+//000000003600
+ exit();?>
+think_serialize:a:9:{i:150;a:3:{s:2:"id";i:150;s:7:"name_cn";s:9:"福州市";s:7:"name_en";s:6:"Fuzhou";}i:151;a:3:{s:2:"id";i:151;s:7:"name_cn";s:9:"厦门市";s:7:"name_en";s:6:"Xiamen";}i:152;a:3:{s:2:"id";i:152;s:7:"name_cn";s:9:"莆田市";s:7:"name_en";s:6:"Putian";}i:153;a:3:{s:2:"id";i:153;s:7:"name_cn";s:9:"三明市";s:7:"name_en";s:7:"Sanming";}i:154;a:3:{s:2:"id";i:154;s:7:"name_cn";s:9:"泉州市";s:7:"name_en";s:8:"Quanzhou";}i:155;a:3:{s:2:"id";i:155;s:7:"name_cn";s:9:"漳州市";s:7:"name_en";s:9:"Zhangzhou";}i:156;a:3:{s:2:"id";i:156;s:7:"name_cn";s:9:"南平市";s:7:"name_en";s:7:"Nanping";}i:157;a:3:{s:2:"id";i:157;s:7:"name_cn";s:9:"龙岩市";s:7:"name_en";s:7:"Longyan";}i:158;a:3:{s:2:"id";i:158;s:7:"name_cn";s:9:"宁德市";s:7:"name_en";s:6:"Ningde";}}

@@ -1,0 +1,4 @@
+<?php
+//000000003600
+ exit();?>
+think_serialize:a:9:{i:87;a:3:{s:2:"id";i:87;s:7:"name_cn";s:9:"长春市";s:7:"name_en";s:9:"Changchun";}i:88;a:3:{s:2:"id";i:88;s:7:"name_cn";s:9:"吉林市";s:7:"name_en";s:5:"Jilin";}i:89;a:3:{s:2:"id";i:89;s:7:"name_cn";s:9:"四平市";s:7:"name_en";s:6:"Siping";}i:90;a:3:{s:2:"id";i:90;s:7:"name_cn";s:9:"辽源市";s:7:"name_en";s:8:"Liaoyuan";}i:91;a:3:{s:2:"id";i:91;s:7:"name_cn";s:9:"通化市";s:7:"name_en";s:7:"Tonghua";}i:92;a:3:{s:2:"id";i:92;s:7:"name_cn";s:9:"白山市";s:7:"name_en";s:7:"Baishan";}i:93;a:3:{s:2:"id";i:93;s:7:"name_cn";s:9:"松原市";s:7:"name_en";s:8:"Songyuan";}i:94;a:3:{s:2:"id";i:94;s:7:"name_cn";s:9:"白城市";s:7:"name_en";s:8:"Baicheng";}i:95;a:3:{s:2:"id";i:95;s:7:"name_cn";s:9:"延边州";s:7:"name_en";s:7:"Yanbian";}}

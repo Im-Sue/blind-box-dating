@@ -1,0 +1,158 @@
+{include file="common/header" /}
+
+<div class="take" style="color: #fff">
+    <header>
+        <h1>摆摊赚钱</h1>
+    </header>
+    <div class="text">{$invitation_content|raw}</div>
+    <div class="content">
+        <div class="layui-row">
+
+            <fieldset class="layui-elem-field">
+                <legend>账号<a href="../invitation/login_out" style="color: #fff">【退出登录】</a></legend>
+                <div class="layui-field-box" style="text-align: center;font-weight: 600;font-size: 1rem;">
+                    【id:{$info.id}】{$info.user}
+                </div>
+            </fieldset>
+
+            <div class="layui-bg-gray" style="padding: 30px;border-radius: 1rem;">
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-col-md6 layui-col-xs6">
+                        <div class="layui-card">
+                            <div class="layui-card-header">余额 <span id="tixian">[提现]</span></div>
+                            <div class="layui-card-body">
+                                <b class="surplus_money">{$info.surplus_money}</b>元
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md6 layui-col-xs6">
+                        <div class="layui-card">
+                            <div class="layui-card-header">已提 <span id="jilu">[记录]</span></div>
+                            <div class="layui-card-body">
+                                <b>{$info.already_money}</b>元
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-col-xs12">
+
+
+                <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                    <ul class="layui-tab-title">
+                        {volist name="imgs" id="v"}
+                        <li>海报{$key+1}</li>
+                        {/volist}
+                    </ul>
+                    <div class="layui-tab-content">
+                        {volist name="imgs" id="v"}
+                        <div class="layui-tab-item content-poster{$key+1} ">
+                            <img src="{$v}" alt="" width="100%">
+                        </div>
+                        {/volist}
+                    </div>
+                </div>
+            </div>
+
+            <br >
+            <div class="layui-form-item">
+                <div class="layui-input-block" style="margin: 0px;text-align: center;">
+                    <a href="../stay" class="layui-btn layui-btn-radius layui-btn-normal">留一个</a>
+                    <a href="../take" class="layui-btn layui-btn-radius layui-btn-warm">抽一个</a>
+                    <a href="../index" class="layui-btn layui-btn-radius">回主页</a>
+                </div>
+            </div>
+            <script>
+                $(function () {
+                    $(".layui-tab-title li:eq(0)").addClass("layui-this");
+                    $(".content-poster1").addClass("layui-show");
+                    layui.use(['layer'], function(){
+                        var layer = layui.layer;
+                        if("{$invitation}" == "no"){
+                            layer.ready(function(){
+                                layer.confirm('{$invitation_alert}', {
+                                    btn: ['开通分销','退出']
+                                }, function(){
+                                    window.location.href = '../invitation/order';
+                                },function (){
+                                    window.location.href = '../invitation/login_out';
+                                });
+                            });
+                        }
+
+                        $("#jilu").click(function () {
+                            $.ajax({
+                                url: '/invitation/tixianjilu',
+                                type: 'post',
+                                data: {},
+                                dataType: "json",
+                                success: function(rst){
+                                     html = `<table width="98%" border="1" style="text-align: center;margin: 1%;">
+                                            <tr>
+                                                <td>提现金额</td>
+                                                <td>支付宝账号</td>
+                                                <td>支付宝姓名</td>
+                                                <td>状态</td>
+                                                <td>申请时间</td>
+                                            </tr>`;
+
+                                    $.each(rst.data,function(i,j){
+                                         html += `<tr>
+                                                    <td>${j.surplus_money}元</td>
+                                                    <td>${j.ali_pay}</td>
+                                                    <td>${j.ali_name}</td>
+                                                    <td>${j.status}</td>
+                                                    <td>${j.create_time}</td>
+                                                </tr>`;
+                                        });
+                                    html += `</table>`;
+
+                                    //页面层-自定义
+                                    layer.ready(function(){
+                                        layer.open({
+                                            type: 1,
+                                            title: false,
+                                            closeBtn: 0,
+                                            shadeClose: true,
+                                            skin: 'yourclass',
+                                            content: html
+                                        });
+                                    });
+                                }
+                            });
+                        });
+
+                        $("#tixian").click(function () {
+                            layer.prompt({title:'提现申请'},function(value){
+                                var ali_pay = $("#ali_pay").val();
+                                var ali_name = $("#ali_name").val();
+                                var surplus_money = $(".surplus_money").text();
+                                if(parseFloat(value)>parseFloat(surplus_money)){
+                                    layer.msg("提现金额不足！");
+                                    return false;
+                                }
+                                $.ajax({
+                                    url: '/invitation/tixian',
+                                    type: 'post',
+                                    data: {surplus_money:value,ali_pay:ali_pay,ali_name:ali_name},
+                                    dataType: "json",
+                                    success: function(rst){
+                                        layer.msg(rst.msg);
+                                        if(rst.code==1){
+                                            window.location.reload()
+                                        }
+                                    }
+                                });
+                            });
+                            $(".layui-layer-content .layui-layer-input").attr("placeholder","输入提现金额");
+                            $(".layui-layer-content").append("<br><input type=\"text\" id= \"ali_pay\" class=\"layui-input\" placeholder=\"请输入支付宝账号\"/>");
+                            $(".layui-layer-content").append("<br><input type=\"text\" id= \"ali_name\" class=\"layui-input\" placeholder=\"请输入支付宝姓名\"/>");
+                        })
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
+{include file="common/footer" /}
