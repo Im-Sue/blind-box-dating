@@ -40,7 +40,6 @@
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1015/153058_24d7d6b5_8114674.png "屏幕截图.png")
 
-
 #### 软件架构
 php 独立部署，可选加密、开源
 
